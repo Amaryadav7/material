@@ -1,0 +1,21 @@
+{
+  "name": "sharedservice",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.0.1",
+    "@angular/core": "^8.0.1"
+  },
+  "main": "bundles/sharedservice.umd.js",
+  "module": "fesm5/sharedservice.js",
+  "es2015": "fesm2015/sharedservice.js",
+  "esm5": "esm5/sharedservice.js",
+  "esm2015": "esm2015/sharedservice.js",
+  "fesm5": "fesm5/sharedservice.js",
+  "fesm2015": "fesm2015/sharedservice.js",
+  "typings": "sharedservice.d.ts",
+  "metadata": "sharedservice.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
