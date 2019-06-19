@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ValuefyModule } from 'valuefy';
+// import { ValuefyModule } from 'valuefy';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: valuefy
+    loadChildren: './LibModule.module#LibModule'
   }
 ];
-export function valuefy() {
+// export function valuefy() {
 
-  return ValuefyModule;
-}
+//   return ValuefyModule;
+// }
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
