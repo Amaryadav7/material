@@ -18,6 +18,44 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "valuefy-library": [
+        "dist/valuefy-library"
+      ],
+      "valuefy-library/*": [
+        "dist/valuefy-library/*"
+      ],
+      "valuefy-lib": [
+        "dist/valuefy-lib"
+      ],
+      "valuefy-lib/*": [
+        "dist/valuefy-lib/*"
+      ],
+      "valuefy": [
+        "dist/valuefy"
+      ],
+      "valuefy/*": [
+        "dist/valuefy/*"
+      ],
+      "valuefy1": [
+        "dist/valuefy1"
+      ],
+      "valuefy1/*": [
+        "dist/valuefy1/*"
+      ],
+      "sharedservice": [
+        "dist/sharedservice"
+      ],
+      "sharedservice/*": [
+        "dist/sharedservice/*"
+      ],
+      "sharedevent": [
+        "dist/sharedevent"
+      ],
+      "sharedevent/*": [
+        "dist/sharedevent/*"
+      ]
+    }
   }
 }

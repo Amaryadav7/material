@@ -1,0 +1,13 @@
+{
+  "name": "valuefy",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.0.1",
+    "@angular/core": "^8.0.1"
+  },
+  "dependencies": {
+    "sharedevent": "file:../../dist/sharedevent",
+    "sharedservice": "file:../../dist/sharedservice",
+    "valuefy1": "file:../../dist/valuefy1"
+  }
+}

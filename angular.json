@@ -115,6 +115,225 @@
           }
         }
       }
-    }},
+    },
+    "valuefy-library": {
+      "projectType": "library",
+      "root": "projects/valuefy-library",
+      "sourceRoot": "projects/valuefy-library/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/valuefy-library/tsconfig.lib.json",
+            "project": "projects/valuefy-library/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/valuefy-library/src/test.ts",
+            "tsConfig": "projects/valuefy-library/tsconfig.spec.json",
+            "karmaConfig": "projects/valuefy-library/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/valuefy-library/tsconfig.lib.json",
+              "projects/valuefy-library/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "valuefy-lib": {
+      "projectType": "library",
+      "root": "projects/valuefy-lib",
+      "sourceRoot": "projects/valuefy-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/valuefy-lib/tsconfig.lib.json",
+            "project": "projects/valuefy-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/valuefy-lib/src/test.ts",
+            "tsConfig": "projects/valuefy-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/valuefy-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/valuefy-lib/tsconfig.lib.json",
+              "projects/valuefy-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "valuefy": {
+      "projectType": "library",
+      "root": "projects/valuefy",
+      "sourceRoot": "projects/valuefy/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/valuefy/tsconfig.lib.json",
+            "project": "projects/valuefy/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/valuefy/src/test.ts",
+            "tsConfig": "projects/valuefy/tsconfig.spec.json",
+            "karmaConfig": "projects/valuefy/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/valuefy/tsconfig.lib.json",
+              "projects/valuefy/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "src/environments/environment.ts",
+              "with": "src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "valuefy1": {
+      "projectType": "library",
+      "root": "projects/valuefy1",
+      "sourceRoot": "projects/valuefy1/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/valuefy1/tsconfig.lib.json",
+            "project": "projects/valuefy1/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/valuefy1/src/test.ts",
+            "tsConfig": "projects/valuefy1/tsconfig.spec.json",
+            "karmaConfig": "projects/valuefy1/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/valuefy1/tsconfig.lib.json",
+              "projects/valuefy1/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "sharedservice": {
+      "projectType": "library",
+      "root": "projects/sharedservice",
+      "sourceRoot": "projects/sharedservice/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/sharedservice/tsconfig.lib.json",
+            "project": "projects/sharedservice/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sharedservice/src/test.ts",
+            "tsConfig": "projects/sharedservice/tsconfig.spec.json",
+            "karmaConfig": "projects/sharedservice/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/sharedservice/tsconfig.lib.json",
+              "projects/sharedservice/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "sharedevent": {
+      "projectType": "library",
+      "root": "projects/sharedevent",
+      "sourceRoot": "projects/sharedevent/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/sharedevent/tsconfig.lib.json",
+            "project": "projects/sharedevent/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sharedevent/src/test.ts",
+            "tsConfig": "projects/sharedevent/tsconfig.spec.json",
+            "karmaConfig": "projects/sharedevent/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/sharedevent/tsconfig.lib.json",
+              "projects/sharedevent/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
   "defaultProject": "valuefy-material"
 }
